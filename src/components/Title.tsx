@@ -1,7 +1,18 @@
 import {Link} from "react-router-dom";
 
-const Title = (props) => {
-    const {title,titleSmall,titleItallic,paragraph} = props;
+
+interface TitleProps{
+  title: string;
+  titleSmall: string;
+  titleItallic: string;
+  paragraph: string;
+}
+const Title: React.FC<TitleProps> = ({
+  title,
+  titleSmall,
+  titleItallic,
+  paragraph,
+}) => {
     return ( 
     <div className="area1">
     <Link to="/">arrow</Link>

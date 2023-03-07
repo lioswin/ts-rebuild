@@ -1,4 +1,10 @@
-const Card = ({image,title,title2,description}) => {
+interface CardProps {
+  image: string;
+  title: string;
+  title2: string;
+  description: string;
+}
+function Card({image,title,title2,description}: CardProps){
     return ( 
         <div className="areastaff">
               <div className="image-staff1">
