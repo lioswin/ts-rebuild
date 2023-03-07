@@ -1,0 +1,731 @@
+
+/* variables */
+
+/* reset */
+*,*::before,*::after{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+svg{
+  padding: 0;
+  margin: 0;
+}
+li{
+  list-style: none;
+}
+a {
+  color: black;
+}
+body{
+  /* overflow: hidden; */
+  height: 100%;
+  font-size: 5vw;
+  font-family: "Poppins", sans-serif;
+}
+
+h1{
+  line-height: 1em;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+h3{
+  font-size: 2rem;
+}
+
+img{
+  width: 100%;
+}
+/* mobile first */
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-end;
+  /* padding: 2.5em; */
+}
+.content{
+  height: 100%;
+  padding: 2.5em;
+}
+.intro-logo{
+width: 40%;
+}
+
+.below{
+  display: flex;
+  flex-direction: column;
+  padding-top: 30%;
+}
+.navigation > ul {
+  position: absolute;
+  display: none;
+}
+
+.textwrapper > p {
+  padding-top: 1em;
+  padding-bottom: 1.5em;
+  line-height: 1.5em;
+}
+
+.textwrapper > a {
+  line-height: 45px;
+  padding: .5rem 3rem .5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border: 2px solid #303030;
+  color: #303030;
+}
+
+.social{
+  display: flex;
+  padding-top:60%;
+}
+.social > div{
+  padding-right: 10%;
+  
+}
+
+.image{
+  position: relative;
+  height: 90vh;
+  background-image: url(./images/bg-main-monochrome_3.jpg);
+}
+
+span{
+  padding: 2em;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color:white;
+  display: flex;
+  flex-direction: column;
+}
+
+.larger{
+  font-size: 4em;
+  align-self: center;
+}
+
+.content2{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.area1 > a{
+  position: absolute;
+  display: none;
+}
+
+.area1{
+  padding: 2em;
+  padding-top: 20%;
+}
+
+.personal{
+  padding-top: .8em;
+}
+.paragraph{
+  padding-top: .8em;
+  padding-bottom: 1.5em;
+  line-height: 1.5em;
+  font-size: 1.2rem;
+}
+
+.area1 > div > h1 {
+  text-transform: capitalize;
+}
+
+.paragraph > h2 {
+  display: inline-block;
+}
+
+.area1 > div > b{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.area2{
+  display: flex;
+  flex-direction:column;
+}
+
+.image-area2{
+  background-image: url(./images/feature-1.jpg);
+  background-position:center center;
+  background-size: cover;
+  height: 50vh;    
+}
+
+.words{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  line-height: 1.5em;
+  font-size: 1.2rem;
+}
+
+.words > h3 {
+  text-transform: uppercase;
+  padding-bottom: .8em;
+  font-size: 1.5em;
+}
+
+.area3{
+  flex-direction:column;
+  display: flex;
+}
+
+.image-area3{
+  background-image: url(./images/feature-2.jpg);
+  background-position:center center;
+  background-size: cover;
+  height: 50vh;    
+}
+
+.area4{
+  flex-direction:column;
+  display: flex;
+}
+
+.image-area4{
+  background-image: url(./images/feature-3.jpg);
+  background-position:center center;
+  background-size: cover;
+  height: 50vh;    
+}
+
+.area5{
+  flex-direction:column;
+  display: flex;
+}
+
+.image-area5{
+  background-image: url(./images/feature-4.jpg);
+  background-position:center center;
+  background-size: cover;
+  height: 50vh;
+}
+
+.image-area6{
+height: 90vh;
+background-image: url(./images/bg-blockquote.jpg);
+background-position:center center;
+background-size: cover;
+}
+
+.par{
+  padding: 2em;
+}
+
+.par > p {
+  padding-top: 10%;
+  font-style: italic;
+  line-height: 1.5em;
+  font-size: 1.2rem;
+}
+
+.par > i {
+  font-size: 70px;
+  color:rgb(120, 126, 133);
+}
+
+.auth{
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+.work{
+  display: flex;
+  flex-direction: column;
+}
+
+.sample{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  }
+
+.about{
+  display: flex;
+  flex-direction: column-reverse;
+
+}
+
+.image2{
+      background-image:url(./images/about-page-img-1.jpg);
+      background-size: cover;
+      background-position: bottom;
+      height: 80vh
+  }
+
+  .italic{
+      font-size: 1.5em;
+  }
+
+  .areastaff{
+      display: flex;
+      padding-left: 2.5em;
+      padding-right: 2.5em;
+      flex-direction: column;
+  }
+
+  .staffcontent{
+      padding-top:1.5em;
+      padding-bottom: 1.5em;
+  }
+  
+  .staffcontent > h3{
+      font-size: 1.8rem;
+  }
+   h5 {
+      font-size: 1.2rem;
+      color: #303030;
+  }
+
+  .staffcontent > p {
+      padding-top: 1em;
+      line-height: 1.6em;
+      font-size: 1rem;
+  }
+  
+.staff{
+    display: flex;
+    flex-direction: column;
+}
+
+.staff1{
+  background-image: url(./images/portfolio-item-1_900x1200.jpg);
+  background-position:center center;
+  background-size: cover;
+  height: 80vh;
+}
+.staff2{
+  background-image: url(./images/portfolio-item-2_900x1200.jpg);
+  background-position:center center;
+  background-size: cover;
+  height: 80vh;
+}
+.staff3{
+  background-image: url(./images/portfolio-item-3_900x1200.jpg);
+  background-position:center center;
+  background-size: cover;
+  height: 80vh;
+}
+
+.staff4{
+  background-image: url(./images/portfolio-item-4_900x1200.jpg);
+  background-position:center center;
+  background-size: cover;
+  height: 80vh;
+}
+
+.contact  {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.map{
+    background-color: #303030;
+    height: 100vh;
+}
+/* small tablets */
+@media screen and (min-width:620px) { 
+  body{
+      font-size:20px ;
+  }
+}
+
+/* large tablets and laptops */
+
+@media screen and (min-width:768px) {
+  body{
+      font-size:30px;
+  }
+
+  .content{
+      height: 70%;
+      padding: 2em;
+      padding-top: 1.4em;
+  }
+  .intro-logo{
+      width: 20%;
+    }
+
+    .below{
+      padding-top: 15%;
+  }
+
+  .textwrapper > p {
+      width: 53%;
+      font-size: .8em;
+      padding-top: 1em;
+      padding-bottom: 1.5em;
+      line-height: 1.5em;
+  }
+  h1{
+     font-size: 3em; 
+  }
+
+  .social{
+      display: flex;
+      padding-top:10%;
+  }
+
+  .social > div{
+      padding-right: 3%;
+      font-size: .7em;
+      
+  }
+  .area1{
+      padding: 2em;
+      padding-top: 10%;
+  }
+
+  .italic{
+      font-size: .8em;
+  }
+
+  .paragraph{
+      font-size: 1.1rem;
+      padding-bottom: .5em;
+  }
+  
+  .area2,.area4{
+      flex-direction: row;
+  }
+  .area3,.area5{
+      flex-direction: row-reverse;
+  }
+  .image-area2,.image-area3,.image-area4,.image-area5{
+  flex-basis: 50%;
+  }
+  .words{
+  flex-basis: 50%;
+  text-align: center;
+  justify-content: center;
+  }
+  .image2{
+      background-size: contain;
+  }
+
+  .wrapper-img{
+      padding: 2em;
+      display: flex;
+      gap: 1em;
+  }
+
+  .areastaff{
+      padding: 0;
+  }
+  
+  .staff{
+      flex-basis: 50%;
+      height: 100vh;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+
+  .staff1{
+      flex-basis: 50%;
+      background-position: center center;
+      height: 50vh;
+  }
+  .staff2{
+      flex-basis: 50%;
+      background-position: center center;
+      height: 50vh;
+  }
+  .staff3{
+      flex-basis: 50%;
+      background-position: center center;
+      height: 50vh;
+  }
+  .staff4{
+      flex-basis: 50%;
+      background-position: center center;
+      height: 50vh;
+  }
+
+}
+@media screen and (min-width:960px) {
+  body{
+      font-size:25px;
+  }
+  .content{
+      padding: 3em;
+      padding-top: 1.5em;
+  }
+  .intro-logo{
+      width: 14%;
+  }
+
+  .below{
+      padding-top:5% ;
+  }
+
+  .area1{
+      padding-top: 7%;
+      padding: 3em;
+  }
+
+  .italic{
+      font-size: 1.2em;
+  }
+
+  .words{
+      padding-top: 0;
+      padding-bottom: 0;
+  }
+  .par{
+      padding: 3em;
+  }
+  .par > p{
+      width: 80%;
+      display: inline-block;
+      font-size: 1.2em;
+      padding-top: 5%;
+  }
+  .par > i {
+      display: block;
+      font-size: 2em;
+  }
+
+  .auth{
+      padding-top: 4%;
+      font-size: .8em;
+  }
+
+  .image-area6{
+      height: 120vh;
+      background-size: contain;
+  }
+  .words{
+      padding-left: 3em;
+      padding-right: 3em;
+  }
+
+  .image2{
+      background-size:cover;
+      background-position: center center;
+      height: 130vh;
+  }
+  
+  .area1{
+      padding-bottom: 0;
+  }
+  .area1 >div> h1 {
+      font-size: 2em;
+  }
+  .paragraph{
+      width: 90%;
+  }
+
+  .wrapper-img{
+      padding-left: 3em;
+      padding-right: 3em;
+  }
+  .staff1{
+      height: 110vh;
+  }
+  .staff2{
+      height: 110vh;
+  }
+  .staff3{
+      height: 110vh;
+  }
+  .staff4{
+      height: 110vh;
+  }
+}
+
+/* desktop screen */
+@media screen and (min-width:1200px) {
+  body{
+      overflow: hidden;
+      font-size:30px ;
+
+  }
+
+  .home{
+      width: 100%;
+      display: flex;
+      flex-basis:100%
+  }
+
+  .image{
+      height: 100vh;
+      width: 50%;
+      /* flex-basis: 50%; */
+  }
+  .content{
+      width: 50%;
+      padding: 2em;
+      padding-top: 1em;
+  }
+
+  .navigation > ul > li > a{
+      font-size: .8em;
+  }
+  .intro-logo{
+      width: 20%;
+  }
+
+  .top{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 10px;
+  }
+  .navigation{
+      display: flex;
+      align-items: center;
+  }
+  .navigation > ul{
+    position: relative;
+    display:flex;
+    justify-content: center;
+  }
+
+  .navigation > ul > li {
+      font-size: .7em;
+      padding-left: 1.5em;
+      font-weight: 600;
+  }
+
+  .below{
+      padding-top: 10vh;
+  }
+
+  .textwrapper > h1{
+      font-size: 2.4em;
+  }
+
+  .textwrapper > p{
+      font-size: .7em;
+      width: 90%;
+  }
+
+  .social{
+      padding-top: 4em;
+  }
+
+  .social > div {
+  padding-right: 4%;
+  font-size: .6em;
+  }
+  
+  .image > span{
+      font-size: .6em;
+  }
+ 
+  .about{
+      width: 100%;
+      flex-direction: row;
+  }
+
+  .image2{
+      flex-basis: 50%;
+      height: 100vh;
+      width: 50%;
+  }
+  .content2{
+      width: 50%;
+      height: 100vh;
+      overflow-y: scroll;
+  }
+
+
+  .area1{
+      flex-basis: 100%;
+      display: flex;
+      flex-direction: column;   
+      padding: 2em;
+     }
+  .area1 > a {
+      position: relative;
+      display:inline-block;
+      width: 15%;
+      line-height: 45px;
+      padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+      font-size: 1rem;
+      font-weight: 700;
+      border: 2px solid #303030;
+      color: #303030;
+      margin-bottom: 3em;
+      text-align: center;
+  }
+  
+  .area1 > div > h1 {
+      font-size: 1.9em;
+  }
+
+  .personal{
+      padding-top: .3em;
+  }
+
+  .paragraph{
+      width: 95%;
+  }
+  
+  .image-area2,.image-area3,.image-area4,.image-area4{
+      height: 40vh;
+  }
+  .words > h3{
+      font-size: 1.2em;
+  }
+
+  .words > p {
+      font-size: .9em;
+  }
+  .image-area6{
+      background-size: cover;
+      height: 100vh;
+  }
+  .par > p {
+      width: 100%;
+  }
+  .work{
+      flex-direction: row-reverse;
+      height: 100vh;
+  }
+
+  .sample{
+
+      flex-basis: 50%;
+      width: 50%;
+      height: 100vh;
+      overflow-y: scroll;
+  }
+
+ .staff1,.staff2,.staff3,.staff4{
+     flex-basis: 50%;
+     height: 50vh;
+ }
+
+ .wrapper-img{
+     padding-right: 2em;
+     padding-left: 2em;
+     padding-top: 0;
+ }
+
+.contact{
+    flex-direction: row;    
+}
+.map{
+    flex-basis: 50%;
+    width: 50%;
+}
+
+}
